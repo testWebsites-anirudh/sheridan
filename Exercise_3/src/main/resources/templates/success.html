@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+<style>
+	body{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	width:98%;
+	height:100vh;
+	background: radial-gradient(circle, #4f4f4f 0%, #222222 50%, black 100%);
+	}
+	
+	form{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: center;
+		background-color: #ffffff;
+		border-radius: 10px;
+		width: 40%;
+	}
+	
+	form input{
+		margin: 5px 0 10px 0;
+		width:80%;
+	}
+	
+	form button{
+	margin-bottom: 30px;
+	}
+	
+	.ast{
+		color:red;
+	}
+	
+</style>
+
+</head>
+<body>
+
+<form action="submit" method="post">
+<h1>Login Successful</h1>
+	<h3>Name<span class="ast">&ast;</span></h3>
+	<input type="text" name="name">
+	<h3>Student ID<span class="ast">&ast;</span></h3>
+	<input type="number" name="sID">
+	<h3>Courses Taken</h3>
+	<input type="text" name="c1">
+	<input type="text" name="c2">
+	<input type="text" name="c3">
+	<input type="text" name="c4">
+	<input type="text" name="c5">
+	<input type="text" name="c6">
+	<button type="submit">Submit</button>
+</form>
+</body>
+</html>
